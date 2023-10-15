@@ -1,0 +1,36 @@
+package com.Practice.Mock;
+
+public class Notes {
+	public static void main(String[] args) {
+		
+		int number = 4800;
+		int twoTh = 0;
+		int fiveHun = 0;
+		int twoHun = 0;
+		int oneHun = 0;
+		System.out.println(number/2000);
+		while(number != 0) {
+			if(number % 2000 == 0) {
+				twoTh++;
+				number = number / 2000;
+			}
+			else if(number % 500 == 0) {
+				fiveHun++;
+				number  = number / 500;
+			}
+			else if(number % 200 == 0) {
+				twoHun++;
+				number  = number / 200;
+			}
+			else if(number % 100 == 0) {
+				oneHun++;
+				number  = number / 100;
+			}
+		}
+		
+		System.out.println("2000 : "+twoTh);
+		System.out.println("500 : "+fiveHun);
+		System.out.println("200 : "+twoHun);
+		System.out.println("100 : "+oneHun);
+	}
+}

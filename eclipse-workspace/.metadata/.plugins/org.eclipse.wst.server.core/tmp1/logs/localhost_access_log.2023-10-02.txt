@@ -1,0 +1,16 @@
+127.0.0.1 - - [02/Oct/2023:14:20:59 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:14:21:01 +0530] "GET /WebBankManagement/ HTTP/1.1" 200 2006
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:14:21:01 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:14:21:04 +0530] "POST /WebBankManagement/login.jsp HTTP/1.1" 200 1164
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:14:22:22 +0530] "POST /WebBankManagement/loginserv HTTP/1.1" 200 1863
+127.0.0.1 - - [02/Oct/2023:15:22:09 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:22:12 +0530] "POST /WebBankManagement/login.jsp HTTP/1.1" 200 1164
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:22:14 +0530] "GET /WebBankManagement/ HTTP/1.1" 200 2006
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:22:14 +0530] "GET /WebBankManagement/ HTTP/1.1" 200 2006
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:22:14 +0530] "GET /WebBankManagement/ HTTP/1.1" 200 2006
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:22:14 +0530] "GET /WebBankManagement/ HTTP/1.1" 200 2006
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:22:16 +0530] "POST /WebBankManagement/login.jsp HTTP/1.1" 200 1164
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:22:47 +0530] "POST /WebBankManagement/loginserv HTTP/1.1" 500 -
+127.0.0.1 - - [02/Oct/2023:15:23:31 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:23:35 +0530] "POST /WebBankManagement/loginserv HTTP/1.1" 200 2251
+0:0:0:0:0:0:0:1 - - [02/Oct/2023:15:23:46 +0530] "POST /WebBankManagement/loginserv HTTP/1.1" 500 -

@@ -1,0 +1,47 @@
+package com.multithread.advance;
+
+class MyData {
+
+	synchronized static public void display(String str) {
+
+		for(int i = 0; i < str.length(); i++) {
+			System.out.print(str.charAt(i));
+			try {
+				Thread.sleep(100);
+			} catch(Exception e) {}
+		}
+		System.out.println();
+	}
+}
+class NewThread1 extends Thread {
+	MyData d;
+	public NewThread1(MyData d) {
+		this.d = d;
+	}
+
+	public void run() {
+		d.display("Hello World");
+	}
+}
+class NewThread2 extends Thread {
+	MyData d;
+	public NewThread2(MyData d) {
+		this.d = d;
+	}
+
+	public void run() {
+		d.display("Welcome All");
+	}
+}
+public class SyncDemo {
+	public static void main(String[] args) {
+		MyData data = new MyData();
+
+		NewThread1 t1 = new NewThread1(data);
+		NewThread2 t2 = new NewThread2(data);
+
+		t1.start();
+		t2.start();
+
+	}
+}

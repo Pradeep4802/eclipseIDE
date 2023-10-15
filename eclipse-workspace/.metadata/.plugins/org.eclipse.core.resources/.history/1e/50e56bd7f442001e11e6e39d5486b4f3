@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="myserv1" method="get">
+		<h1 style="color: red; text-transform: uppercase;">Welcome to
+			Bank</h1>
+		<label for="id"> <input type="number" name="id"
+			placeholder="Enter ID" />
+		</label> <label for="name"> <input type="text" name="name"
+			placeholder="Enter Name" />
+		</label> <label for="email"> <input type="email" name="email"
+			placeholder="Enter Email" />
+		</label> <input type="submit" name="submit" />
+	</form>
+</body>
+</html>

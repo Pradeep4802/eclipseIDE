@@ -1,0 +1,50 @@
+package com.lambda;
+
+import java.util.*;
+
+//import com.collection.set.Teacher;
+
+public class SortData {
+
+	// Add all Teacher data from Teacher class.
+	public void insertData() {
+		List<Teacher> list = new ArrayList<Teacher>();
+		list.add(new Teacher(104,"Zafar","zafar@gmail.com"));
+		list.add(new Teacher(103,"Jay","jay@gmail.com"));
+		list.add(new Teacher(105,"Hiren","hiren@gmail.com"));
+		list.add(new Teacher(102,"Vishal","vishal@gmail.com"));
+		list.add(new Teacher(101,"jyotika","jyotika@gmail.com"));
+
+		// Sorting by Id 
+		Collections.sort(list,(o1,o2)->{
+			return o1.getId()-o2.getId();
+		});
+		print(list);
+		
+		// Sorting by name
+		Collections.sort(list, (o1,o2)->{
+			return o1.getName().compareTo(o2.getName());
+		});
+		print(list);
+		
+		// Sorting y Email
+		Collections.sort(list,(o1,o2)->{
+			return o1.getEmail().compareTo(o2.getEmail());
+		});
+		print(list);
+	}
+
+	public void print(List<Teacher> list) {
+		Iterator<Teacher> it = list.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+	}
+
+	public static void main(String[] args) {
+		SortData sd = new SortData();
+		sd.insertData();
+
+
+	}
+}

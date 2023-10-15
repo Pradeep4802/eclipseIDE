@@ -1,0 +1,13 @@
+package com.abdulbari.multithread;
+
+class MyThread extends Thread {
+	public MyThread(String name) {
+		super(name);
+	}
+}
+
+public class ThreadTest {
+	public static void main(String[] args) {
+		MyThread t = new MyThread("My Thread");
+	}
+}

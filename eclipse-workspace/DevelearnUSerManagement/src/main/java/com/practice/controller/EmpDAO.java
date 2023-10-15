@@ -1,0 +1,15 @@
+package com.practice.controller;
+import java.util.*;
+public class EmpDAO {
+	static ArrayList<Employee> al=new ArrayList<>();
+
+	public boolean addEmp(Employee e) {
+		al.add(e);		
+		return true;
+	}
+
+	public ArrayList<Employee> getEmpList() {
+
+		return al;
+	}
+}

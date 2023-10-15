@@ -1,0 +1,18 @@
+package com.collection.framework;
+
+import java.util.*;
+import java.util.function.*;
+
+public class PredicateDemo {
+	public static void main(String[] args) {
+		String str = "abc";
+		boolean match = str.equals("def");
+		
+		List<Integer> list = new ArrayList<>();
+		
+		Predicate<Integer> p = num -> num == 5;
+		boolean result = p.test(10);
+		
+		System.out.println(result);
+	}
+}

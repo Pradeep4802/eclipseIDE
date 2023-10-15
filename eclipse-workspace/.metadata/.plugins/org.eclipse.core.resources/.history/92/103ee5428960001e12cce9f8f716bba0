@@ -1,0 +1,14 @@
+package practice.basic;
+
+public class Static_01_10_1 {
+	public static void show() {
+		System.out.println("System Show");
+	}
+	public void display() {
+		System.out.println("System Display");
+	}
+	
+	public static void main(String[] args) {
+		show();
+	}
+}

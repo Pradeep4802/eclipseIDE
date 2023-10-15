@@ -1,0 +1,27 @@
+package practice.multithreaded;
+
+public class ATM {
+	public void checkBalance(String name) {
+		System.out.println(name + " Checking ");
+		try {
+			Thread.sleep(1000);
+		} catch (Exception e) {}
+		System.out.println("Balance");
+	}
+	
+	public void withDraw(String name, long amount) {
+		System.out.println(name+" Withdrawing ");
+		try {
+			Thread.sleep(1000);
+		} catch(Exception e) {}
+		System.out.println(amount);
+	}
+	
+	public static void main(String[] args) {
+		ATM atm = new ATM();
+		Customer cust[] = new Customer[5];
+		for(int i = 0; i < 5; i++) {
+			cust[i] = new Customer();
+		}
+	}
+}

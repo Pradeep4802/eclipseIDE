@@ -1,0 +1,10 @@
+package com.servpack;
+
+public class Student {
+	private String Name;
+	private String Email;
+	private String Password;
+	private String Contact;
+	private String Dob;
+	private String Address;
+}

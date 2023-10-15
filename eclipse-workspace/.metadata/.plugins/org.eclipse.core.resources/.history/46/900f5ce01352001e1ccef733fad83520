@@ -1,0 +1,18 @@
+package com.collection.framework;
+import java.util.*;
+
+public class ListIteratorDemo {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList();
+		
+		list.add("Java");
+		list.add("Python");
+		list.add("PHP");
+		list.add("JS");
+		list.add("Django");
+		list.add("HTML");
+		list.add("CSS");
+		
+		System.out.println(list);
+	}
+}

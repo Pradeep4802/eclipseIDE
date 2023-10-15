@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing : border-box;
+	}
+	
+	body {
+		background: rgb(23,67,78);
+	}
+	
+	label {
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<h1>Registration Page</h1>
+		<form action="" method="get">
+
+			<label for="user_name">Enter the Name: <input type="text"
+				name="user_name" /></label><br>
+			<label for="user_pass">Enter the Password: <input type="password"
+				name="user_pass" /></label><br>
+			<label for="user_email">Enter the Email: <input type="email"
+				name="user_email" /></label><br>
+			<label for="user_contact">Enter the Contact: <input type="number"
+				name="user_contact" /></label><br>
+			<label for="user_dob">Enter the DOB: <input type="date"
+				name="user_dob" /></label><br>
+			<label for="user_address">Enter the Address: <input type="text"
+				name="user_address" /></label>
+				<br>
+			<input type="submit" value="Submit" />
+
+		</form>
+	</div>
+</body>
+</html>

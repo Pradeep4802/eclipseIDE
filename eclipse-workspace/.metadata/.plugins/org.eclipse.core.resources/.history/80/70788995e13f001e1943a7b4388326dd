@@ -1,0 +1,18 @@
+package Wrapper;
+
+class MyObject {
+	
+}
+
+class MyObject1 extends MyObject {
+	
+}
+
+public class LangDemoObject {
+	public static void main(String[] args) {
+		MyObject1 o1 = new MyObject1();
+		System.out.println(o1.getClass());
+//		Object o1 = new Object();
+//		System.out.println(o1);
+	}
+}

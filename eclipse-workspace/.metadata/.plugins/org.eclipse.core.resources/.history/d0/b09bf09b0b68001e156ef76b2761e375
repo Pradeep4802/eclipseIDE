@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h1> This Is Home Page</h1>
+	<h2><a href="register.html">Register : GET Method</a></h2>
+	<h2><a href="register1.html">Register : POST Method</a></h2>
+	<h2><a href="ATM.html">ATM</a></h2>
+	<h2><a href="Program.jsp">Even and Odd</a></h2>
+	<h2><a href="Registration.jsp">Registration DAO</a></h2>
+
+</body>
+</html>

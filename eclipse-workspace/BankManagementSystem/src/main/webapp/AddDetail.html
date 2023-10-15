@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+	.conatiner {
+		margin: 0;
+		padding: 0;
+		font-family: sans-serif;
+	}
+	
+	.head {
+		font-size: 35px;
+		font-weight: bolder;
+		position: relative;
+		top: 15px;
+		left: 45px;
+	}
+	.link {
+		position: relative;
+		top: 15px;
+		left: 120px;
+		text-decoration: none;
+		font-size: 22px;
+	}
+	
+	.Form-User {
+		position: relative;
+		top: 125px;
+		left: 170px;
+		border: 2px solid black;
+		width: 50%;
+		padding: 50px;
+	}
+	
+	.Form-User .space {
+		position: relative;
+		left: 20px;
+	}
+	
+	.btnDown {
+		position: relative;
+		top: 100px;
+		left: 50%;
+	}
+	
+	.btn {
+		position: relative;
+		left: 10px;
+		border-radius: 5px;
+		padding: 5px 45px;
+		color: purple;
+		background-color: yellow;
+		cursor: pointer;
+	}
+</style>
+<body>
+	<div class="container">
+		<span class="head">Add User Details</span>
+		<a href="index.html" class="link">Return to the user details</a>
+	</div>
+	<div class="Form-User">
+		<form action="account" method="post">
+			Enter FirstName: <input type="text" name="user_firstname" placeholder="FirstName" required/>
+			Enter LastName: <input type="text" class="space" name="user_lastname" placeholder="LastName" /></br>
+			Enter Phone: <input type="number" name="user_number" placeholder="Number" />
+			Enter DOB: <input type="date" class="space" name="user_dob" placeholder="Date-Of-Birth" /></br>
+			Enter Address1: <textarea name="user_add1" rows="2" cols="5" placeholder="First Address" ></textarea>
+			Enter Address2: <textarea name="user_add2" class="space" rows="2" cols="5" placeholder="Second Address" ></textarea></br>
+			Enter Gender: <input type="radio" name="user_gender" value="male" />Male
+			<input type="radio" name="user_gender" value="female" />Female
+			<input type="radio" name="user_gender" value="other" />Other
+			Enter Account Number: <input type="number" class="space" name="user_account" placeholder="Account Number" /><br>
+			Enter Account type: <select name="user_type">
+				<option>saving</option>
+				<option>Current</option>
+				<option>Other</option>
+			</select>
+			<div class="btnDown">
+				<input type="submit" value="submit" class="btn" />
+				<input type="submit" value="cancel" class="btn" />
+			</div>
+		</form>
+		
+
+	</div>
+	
+</body>
+</html>

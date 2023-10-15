@@ -1,0 +1,23 @@
+package com.collection.framework;
+import java.util.*;
+public class PredicateStream {
+	public static void main(String[] args) {
+		List<Boys> list = new ArrayList<>();
+		
+		list.add(new Boys("s1", 5));
+		list.add(new Boys("s2", 12));
+		list.add(new Boys("s3", 19));
+		list.add(new Boys("s4", 20));
+		list.add(new Boys("s5", 10));
+		list.add(new Boys("s6", 22));
+		
+		System.out.println(list);
+		
+		List<Boys> filtered = new ArrayList<>();
+		for(Boys student : list) {
+			if(Boys.getAge())
+		}
+		
+		
+	}
+}

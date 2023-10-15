@@ -1,0 +1,18 @@
+package com.collection.framework;
+import java.util.*;
+
+public class ExecuteStudent {
+	public static void main(String[] args) {
+		ArrayList<Student> liststu = new ArrayList();
+		liststu.add(new Student(101,"Pradeep","p@gmail.com"));
+		liststu.add(new Student(102,"Suraj","sj@gmail.com"));
+		liststu.add(new Student(103,"Abhinay","abhi@gmail.com"));
+		
+		System.out.println(liststu);
+		
+		Iterator<Student> iterate = liststu.iterator();
+		while(iterate.hasNext()) {
+			System.out.println(iterate.next()+"\n");
+		}
+	}
+}

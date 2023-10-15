@@ -1,0 +1,17 @@
+127.0.0.1 - - [12/Oct/2023:13:10:59 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:03 +0530] "GET /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:07 +0530] "GET /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:07 +0530] "GET /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:07 +0530] "GET /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:07 +0530] "GET /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:07 +0530] "GET /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:11 +0530] "GET /DevelearnUSerManagement/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:11 +0530] "GET /DevelearnUSerManagement/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:11 +0530] "GET /DevelearnUSerManagement/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:11 +0530] "GET /DevelearnUSerManagement/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:15 +0530] "GET /DevelearnUSerManagement/Registration.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:26 +0530] "POST /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:26 +0530] "GET /DevelearnUSerManagement/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:34 +0530] "POST /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:34 +0530] "GET /DevelearnUSerManagement/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Oct/2023:13:11:36 +0530] "GET /DevelearnUSerManagement/EmployeeServlet HTTP/1.1" 200 258

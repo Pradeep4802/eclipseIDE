@@ -1,0 +1,14 @@
+package Wrapper;
+
+class MyObject {
+	
+}
+
+public class LangDemoObject {
+	public static void main(String[] args) {
+		MyObject o1 = new MyObject();
+		System.out.println(o1);
+//		Object o1 = new Object();
+//		System.out.println(o1);
+	}
+}

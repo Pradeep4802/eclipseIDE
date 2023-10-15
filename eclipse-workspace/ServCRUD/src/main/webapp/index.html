@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(to right, rgb(20, 244, 78),
+		rgb(223, 78, 124), rgb(89, 98, 234));
+}
+
+.container {
+	padding: 50px 30px;
+	margin: 100px 80px;
+	width: 30%;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: bolder;
+	color: #fff;
+}
+
+.forms {
+	width: 62%;
+}
+
+.forms form input {
+	padding: 12px 60px;
+	margin: 10px;
+	border: none;
+	outline: none;
+	border-bottom: 4px solid #c200ff;
+	border-radius: 10px;
+	background: transparent;
+}
+
+.forms form label {
+	color: #fff;
+}
+
+.forms form label select {
+	position: relative;
+	left: 4%;
+	padding: 14px 109px;
+	border-radius: 10px;
+	background: transparent;
+}
+
+.forms form .btn {
+	border: none;
+	outline: none;
+	background: linear-gradient(to right,rgb(89, 98, 234),rgb(223, 78, 124),rgb(20, 244, 78));
+	margin: 10px 92px;
+	padding: 10px 39px;
+	border-radius: 5px;
+	color: #def317;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+</style>
+<body>
+	<div class="container">
+		<h1>Add Employee</h1>
+		<div class="forms">
+			<form action="saveservlet" method="post">
+				<label for="user_name"> Name: <input type="text" name="user_name"
+					placeholder="Enter Name" />
+				</label> <label for="user_password"> Password: <input type="text"
+					name="user_password" placeholder="Enter Password" />
+				</label> <label for="user_email">Email: <input type="text"
+					name="user_email" placeholder="Enter Email" />
+				</label>  <label for="user_country">Country: <select name="user_country">
+						<option>India</option>
+						<option>Sri_Lanka</option>
+						<option>Australia</option>
+				</select>
+				</label>
+				<input type="submit" value="Submit" class="btn"/>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

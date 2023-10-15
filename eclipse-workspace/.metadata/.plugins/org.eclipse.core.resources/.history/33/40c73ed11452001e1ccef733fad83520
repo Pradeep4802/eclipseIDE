@@ -1,0 +1,13 @@
+package com.collection.framework;
+
+public class Student {
+	private int id;
+	private String Name;
+	private String Email;
+	
+	public Student(int id,String Name,String Email) {
+		this.id = id;
+		this.Name = Name;
+		this.Email = Email;
+	}
+}

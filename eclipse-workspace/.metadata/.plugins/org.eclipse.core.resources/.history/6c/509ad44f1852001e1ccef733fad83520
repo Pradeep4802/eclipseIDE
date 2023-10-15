@@ -1,0 +1,27 @@
+package com.collection.framework;
+import java.util.*;
+
+public class ExecuteStudent {
+	public static void main(String[] args) {
+		List<Student> liststu = new ArrayList();
+		liststu.add(new Student(104,"Pradeep","p@gmail.com"));
+		liststu.add(new Student(102,"Suraj","sj@gmail.com"));
+		liststu.add(new Student(101,"Abhinay","abhi@gmail.com"));
+		liststu.add(new Student(105,"Kabber","kb@gmail.com"));
+		liststu.add(new Student(103,"Vaibhav","vai@gmail.com"));
+//		liststu.add(45);
+		
+//		System.out.println(liststu.toString());
+		
+		Iterator<Student> iterate = liststu.iterator();
+		while(iterate.hasNext()) {
+			System.out.println(iterate.next()+"\n");
+		}
+		
+		Collections.sort(liststu);
+		
+		for(Student s  :liststu) {
+			System.out.println(s+"\n");
+		}
+	}
+}

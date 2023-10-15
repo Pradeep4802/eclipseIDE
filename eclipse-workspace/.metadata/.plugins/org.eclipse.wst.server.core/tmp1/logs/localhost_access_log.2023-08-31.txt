@@ -1,0 +1,13 @@
+127.0.0.1 - - [31/Aug/2023:22:32:24 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:22:32:25 +0530] "GET /ServCRUD/ HTTP/1.1" 200 1811
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:22:55:52 +0530] "GET /ServCRUD/ HTTP/1.1" 200 1835
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:22:57:51 +0530] "GET /ServCRUD/ HTTP/1.1" 200 1845
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:22:58:47 +0530] "GET /ServCRUD/saveservlet HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:23:00:36 +0530] "GET /ServCRUD/saveservlet HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:23:00:38 +0530] "GET /ServCRUD/ HTTP/1.1" 200 1845
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:23:00:38 +0530] "GET /ServCRUD/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:23:00:44 +0530] "GET /ServCRUD/saveservlet?user_name=&user_password=&user_email= HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:23:00:59 +0530] "GET /ServCRUD/saveservlet?user_name=Pradeep4802&user_password=234234&user_email=PP4802PAL%40GMAIL.COM HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:23:01:57 +0530] "GET /ServCRUD/saveservlet?user_name=Pradeep4802&user_password=234234&user_email=PP4802PAL%40GMAIL.COM HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:23:02:02 +0530] "GET /ServCRUD/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [31/Aug/2023:23:02:03 +0530] "GET /ServCRUD/saveservlet?user_name=&user_password=&user_email= HTTP/1.1" 404 775

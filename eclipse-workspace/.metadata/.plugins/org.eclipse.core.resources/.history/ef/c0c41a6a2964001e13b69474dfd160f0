@@ -1,0 +1,28 @@
+package com.collection.framework;
+
+import java.util.*;
+import java.util.function.*;
+
+public class PredicateDemo {
+	public static void main(String[] args) {
+		String str = "abc";
+		boolean match = str.equals("def");
+		
+		List<Integer> list = new ArrayList<>();
+		list.add(45);
+		list.add(23);
+		list.add(90);
+		list.add(12);
+		list.add(67);
+		
+		Predicate<Integer> p = (list1) -> list1 == 5;
+//		boolean result = p.test(list);
+		
+//		System.out.println(result);
+		
+		Object s1 = new Object();
+		Object s2 = new Object();
+		
+		System.out.println("Boolean type is : "+Objects.equals(s1, s2));
+	}
+}

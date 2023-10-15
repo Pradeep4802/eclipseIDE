@@ -1,0 +1,15 @@
+package com.collection.framework;
+import java.util.*;
+public class FibonacciNumbers {
+	public static void main(String[] args) {
+		List<Integer> list = new ArrayList();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the length : ");
+		int length = sc.nextInt();
+		for (int i = 0; i < length; i++) {
+			int num = sc.nextInt();
+			list.add(num);
+		}
+		System.out.println(list);
+	}
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+</head>
+<body>
+	<div>
+		<h1>Registration Page</h1>
+		<form action="" method="get">
+		
+			<label for="user_name">Enter the Name: <input type="text" name="user_name"/></label>
+		
+		</form>
+	</div>
+</body>
+</html>

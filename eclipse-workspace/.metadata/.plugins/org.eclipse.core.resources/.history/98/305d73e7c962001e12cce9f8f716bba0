@@ -1,0 +1,20 @@
+package practice.multithreaded;
+
+public class ATM {
+	synchronized public static void checkBalance(String name) {
+		System.out.println("Name : "+name);
+	}
+	
+	synchronized public static void withDraw(String name, long amount) {
+		System.out.println("Name : "+name);
+		System.out.println("Amount : "+amount);
+	}
+	
+	public static void main(String[] args) {
+		ATM atm = new ATM();
+		Customer cust[] = new Customer[5];
+		for(int i = 0; i < 5; i++) {
+			cust[i] = new Customer();
+		}
+	}
+}

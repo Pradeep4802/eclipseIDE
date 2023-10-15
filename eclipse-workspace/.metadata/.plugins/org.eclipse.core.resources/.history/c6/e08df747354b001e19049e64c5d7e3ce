@@ -1,0 +1,20 @@
+package com.abdulbari.multithread;
+
+class MyThread extends Thread {
+	public MyThread(String name) {
+		super(name);
+//		Thread t1 = new Thread(name);
+//		System.out.println(t1.getName());
+	}
+}
+
+public class ThreadTest {
+	public static void main(String[] args) throws Exception{
+		MyThread t = new MyThread("My Thread");
+		System.out.println("ID : "+t.getId());
+		System.out.println("Name : "+t.getName());
+		System.out.println("Priorities : "+t.getPriority());
+		System.out.println("State : "+t.getState());
+		System.out.println("Alive : "+t.isAlive());
+	}
+}

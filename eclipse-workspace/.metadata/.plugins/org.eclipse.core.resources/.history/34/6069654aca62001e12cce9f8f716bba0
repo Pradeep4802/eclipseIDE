@@ -1,0 +1,13 @@
+package practice.multithreaded;
+
+public class Customer {
+	ATM atm;
+	String name;
+	long amount;
+	
+	// ATM method
+	void useATM() {
+		ATM.checkBalance(name);
+		ATM.withDraw(name, amount);
+	}
+}

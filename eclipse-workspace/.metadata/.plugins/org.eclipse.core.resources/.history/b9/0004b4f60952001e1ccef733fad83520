@@ -1,0 +1,16 @@
+package com.collection.framework;
+import java.util.*;
+
+
+public class VectorDemo {
+	public static void main(String[] args) {
+		Vector v = new Vector();
+		v.add(45);
+		System.out.println(v);
+		v.add(567);
+		v.add("Java");
+		v.add(true);
+		v.add(9074.943);
+		System.out.println(v);
+	}
+}

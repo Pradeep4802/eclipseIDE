@@ -1,0 +1,25 @@
+package com.collection.framework;
+
+import java.util.*;
+
+public class CollectionExample {
+	public static void main(String[] args) {
+		List<Integer> col = new ArrayList();
+		col.add(45);
+		col.add(56);
+		col.add(90);
+		col.add(78);
+//		col.add(2,101);
+		
+		Collection<Integer> col2 = new ArrayList<>();
+		System.out.println(col);
+		
+		col2.addAll(col);
+		
+		System.out.println(col2);
+		Iterator<Integer> it1 = col.iterator();
+		while(it1.hasNext()) {
+			System.out.println(it1.next()+" ");
+		}
+	}
+}

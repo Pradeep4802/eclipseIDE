@@ -1,0 +1,6 @@
+package com.enam.pro;
+
+public enum Days {
+
+	Sunday,Monday,TuesDay,Wednesday,Thursday,Friday,Saturday;
+}

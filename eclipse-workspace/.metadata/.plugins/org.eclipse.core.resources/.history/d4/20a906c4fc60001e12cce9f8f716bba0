@@ -1,0 +1,21 @@
+package com.lambda;
+
+import java.util.*;
+
+public class SortData {
+	
+	// Add all Teacher data from Teacher class.
+	public void insertData() {
+		List<Teacher> list = new ArrayList();
+		list.add(new Teacher(101,"Zafar","zafar@gmail.com"));
+		list.add(new Teacher(102,"Jay","jay@gmail.com"));
+		list.add(new Teacher(103,"Hiren","hiren@gmail.com"));
+		list.add(new Teacher(104,"Vishal","vishal@gmail.com"));
+		list.add(new Teacher(105,"jyotika","jyotika@gmail.com"));
+	}
+	
+	public static void main(String[] args) {
+		SortData sd = new SortData();
+		sd.insertData();
+	}
+}

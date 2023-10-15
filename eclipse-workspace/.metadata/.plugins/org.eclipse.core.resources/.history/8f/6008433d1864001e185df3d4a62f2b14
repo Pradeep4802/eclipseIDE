@@ -1,0 +1,18 @@
+package com.collection.framework;
+
+import java.util.*;
+
+public class CollectionExample {
+	public static void main(String[] args) {
+		Collection<Integer> col = new ArrayList();
+		col.add(45);
+		col.add(56);
+		col.add(90);
+		col.add(78);
+//		col.add(2,101);
+		
+		Collection<String> col2 = new ArrayList<>();
+		System.out.println(col);
+		System.out.println(col2);
+	}
+}

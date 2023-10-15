@@ -1,0 +1,6 @@
+package com.enam.pro;
+
+public enum Days {
+
+	Sundat,Monday,TruesDay
+}

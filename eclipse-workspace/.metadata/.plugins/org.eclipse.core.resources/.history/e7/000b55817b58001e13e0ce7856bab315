@@ -1,0 +1,129 @@
+package com.file.handle;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Execute {
+	public void writeObject1() {
+
+		String x="/home/pradeepkumar/Desktop/JavaFile/ext1.txt";
+		try {
+			FileOutputStream fs=new FileOutputStream(x);
+			String password=new String("javaCoder123");
+			fs.write(password.getBytes());
+			fs.close();
+			System.out.println("Success");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}		
+
+	}
+
+	public void writeObject2() {
+
+		String x="/home/pradeepkumar/Desktop/JavaFile/ext2.txt";
+		try {
+			FileOutputStream fs=new FileOutputStream(x);
+			String password=new String("javaCoder123");
+
+			ObjectOutputStream obj=new ObjectOutputStream(fs);
+			obj.writeObject(password);
+
+			obj.close();
+			fs.close();
+			System.out.println("Success");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}	
+
+	}
+
+	public void readObject1() {
+
+		String x="/home/pradeepkumar/Desktop/JavaFile/ext1.txt";
+		try {
+			FileInputStream fs=new FileInputStream(x);
+			String data="";
+			int i=0;
+			while((i=fs.read())!=-1)
+			{
+				data=data+((char)i);
+			}
+			System.out.println(data);
+			fs.close();
+			System.out.println("Success");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void writeObject3() {
+
+		String x="/home/pradeepkumar/Desktop/JavaFile/ex3.txt";
+		try {
+			FileOutputStream fs=new FileOutputStream(x);
+			List<Teacher> teach = new ArrayList();
+			teach.add(new Teacher(101,"Suraj Yadav","sj@gmail.com","9988776655","emp123suraj"));
+			teach.add(new Teacher(102,"Pradeep Pal","pp@gmail.com","9988776655","emp123pradeep"));
+			teach.add(new Teacher(103,"Akhilesh Sharma","akhi@gmail.com","82348234848","akhi@2842"));
+			ObjectOutputStream obj=new ObjectOutputStream(fs);
+			obj.writeObject(t);
+			obj.close();
+			fs.close();
+			System.out.println("Success");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}	
+
+	}
+
+	public void readObject3() {
+
+		String x="/home/pradeepkumar/Desktop/JavaFile/ex3.txt";
+		try {
+			FileInputStream fs=new FileInputStream(x);
+			ObjectInputStream obj=new ObjectInputStream(fs);
+			System.out.println(obj.readObject());
+			obj.close();
+			fs.close();
+			System.out.println("Success");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}	
+
+	}
+
+	public void readObject2() {
+
+		String x="/home/pradeepkumar/Desktop/JavaFile/ex2.txt";
+		try {
+			FileInputStream fs=new FileInputStream(x);		
+			ObjectInputStream obj=new ObjectInputStream(fs);
+			System.out.println(obj.readObject());
+			obj.close();
+			fs.close();
+			System.out.println("Success");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}	
+
+	}
+
+	public static void main(String[] args) {
+		Execute e=new Execute();
+		e.writeObject1();
+		e.readObject1();
+
+		System.out.println("======================");
+		e.writeObject2();
+		e.readObject2();
+		System.out.println("======================");
+		e.writeObject3();
+		e.readObject3();
+	}
+}
+

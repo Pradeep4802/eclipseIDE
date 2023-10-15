@@ -1,0 +1,24 @@
+package practice.multithreaded;
+
+import java.util.Iterator;
+
+public class MultiDemo_02_1 {
+	
+	public void demo() {
+		System.out.println("Demo was Called");
+	}
+	public void show() {
+		System.out.println("Show was Calling");
+	}
+	public void run() {
+		for (int i = 0; i < 10; i++) {
+			System.out.println("Thread "+i);
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		Thread th1 = new Thread();
+		th1.start();
+	}
+}

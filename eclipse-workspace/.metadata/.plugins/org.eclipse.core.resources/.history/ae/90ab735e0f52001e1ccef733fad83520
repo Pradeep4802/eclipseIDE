@@ -1,0 +1,26 @@
+package com.collection.framework;
+import java.util.*;
+
+
+public class VectorDemo2 {
+	public static void main(String[] args) {
+		Vector<String> v = new Vector();
+		v.add("Java");
+		v.add("Python");
+		v.add("PHP");
+		v.add("PERL");
+		v.add("C++");
+		
+		System.out.println(v);
+		System.out.println("----------------");
+		Iterator<String> it = v.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		System.out.println("-------------------");
+		Enumeration<String> en = v.elements();
+		while(en.hasMoreElements()) {
+			System.out.println(en.nextElement());
+		}
+	}
+}

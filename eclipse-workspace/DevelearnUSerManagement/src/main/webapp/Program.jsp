@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Even and Odd</title>
+</head>
+<body>
+	<form action="Process.jsp" method="post">
+		<label>Input 1 : </label><input type="text" name="num1" /> <label>Input
+			2 : </label><input type="text" name="num2" /> <label>Input 3 : </label><input
+			type="text" name="num3" /> <label>Input 4 : </label><input
+			type="text" name="num4" /> <label>Input 5 : </label><input
+			type="text" name="num5" /> <input type="submit" value="submit" />
+	</form>
+	
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+</head>
+<body>
+	<div>
+		<h1>Registration Page</h1>
+		<form action="" method="get">
+
+			<label for="user_name">Enter the Name: <input type="text"
+				name="user_name" /></label><br>
+			<label for="user_email">Enter the Email: <input type="email"
+				name="user_email" /></label><br>
+			<label for="user_contact">Enter the Contact: <input type="number"
+				name="user_contact" /></label><br>
+			<label for="user_dob">Enter the DOB: <input type="date"
+				name="user_dob" /></label><br>
+			<label for="user_address">Enter the Address: <input type="text"
+				name="user_address" /></label>
+
+		</form>
+	</div>
+</body>
+</html>

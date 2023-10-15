@@ -1,0 +1,25 @@
+package com.collection.framework;
+
+public class Boys {
+	String name;
+	int Age;
+	public Boys(String name, int num) {
+		super();
+		this.name = name;
+		this.num = num;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return num;
+	}
+	public void setAge(int num) {
+		this.num = num;
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+package InnerClasses;
+
+public class InnerStatic {
+	static int b = 30;
+	int a = 20;
+	static class NewStatic1 {
+		int c = 50;
+		void demo() {
+			System.out.println("Java");
+		}
+		System.out.println(a+" "+b+" "+c);
+	}
+}

@@ -1,0 +1,13 @@
+package com.lambda;
+
+public class SortData {
+	
+	// Add all Teacher data from Teacher class.
+	public static void insertData() {
+		List<Teacher> 
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

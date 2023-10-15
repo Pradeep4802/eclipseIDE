@@ -1,0 +1,32 @@
+package com.collection.framework;
+
+import java.util.*;
+
+public class CollectionExample {
+	public static void main(String[] args) {
+		List<Integer> col = new ArrayList();
+		col.add(45);
+		col.add(56);
+		col.add(90);
+		col.add(78);
+		//		col.add(2,101);
+
+		//		Collection interface can hold reference of ArrayList object
+		// And perform all operation and use method also.
+		Collection<Integer> col2 = new ArrayList<>();
+//		System.out.println(col);
+
+		col2.addAll(col);
+
+//		System.out.println(col2);
+		Spliterator<Integer> it2 = col.spliterator();
+		Iterator<Integer> it1 = col.iterator();
+		while(it2.hasCharacteristics(56)) {
+			System.out.println(it2.characteristics());
+		}
+		int i = 10;
+		if(System.out.format("Hello World, %d",i) == null) {
+			System.out.println("I am there");
+		}
+	}
+}

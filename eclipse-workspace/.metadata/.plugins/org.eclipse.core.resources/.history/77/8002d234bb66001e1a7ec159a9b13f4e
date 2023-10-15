@@ -1,0 +1,5 @@
+package com.xadmin.usermanagement.model;
+
+public class User {
+
+}

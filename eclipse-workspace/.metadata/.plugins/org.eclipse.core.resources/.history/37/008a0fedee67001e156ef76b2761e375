@@ -1,0 +1,20 @@
+package com.collection.map;
+import java.util.*;
+public class HashmapDemo1 {
+	
+	public void hashMapExample() {
+		HashMap<Object,Object> h = new HashMap<>();
+		
+		h.put(23, 56);
+		h.put(22, 50);
+		h.put("Java", 90);
+		h.put(23, 56);
+		
+		System.out.println(h);
+	}
+	
+	public static void main(String[] args) {
+		HashmapDemo1 hash = new HashmapDemo1();
+		hash.hashMapExample();
+	}
+}

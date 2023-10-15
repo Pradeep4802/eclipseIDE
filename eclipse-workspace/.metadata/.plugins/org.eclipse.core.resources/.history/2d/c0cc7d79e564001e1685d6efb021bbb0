@@ -1,0 +1,20 @@
+package com.enam.pro;
+
+public enum Days {
+
+	Sunday,Monday,TuesDay,Wednesday,Thursday,Friday,Saturday;
+	
+	static void meth1() {
+		System.out.println("Pradeep");
+	}
+	
+	
+	String show() {
+		return "Abhinay";
+	}
+	
+	public static void main(String[] args) {
+		meth1();
+		Days d2 = Days.show();
+	}
+}

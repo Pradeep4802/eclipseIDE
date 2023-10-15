@@ -1,0 +1,82 @@
+package com.bank.management.web;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+//import com.bank.management.bean.User;
+import com.bank.management.dao.UserDao;
+
+
+@WebServlet("/loginserv")
+public class Login_Servlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	public void init(ServletConfig config) throws ServletException {
+
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+
+		try(PrintWriter out = response.getWriter()) {
+			//			RequestDispatcher reqdisp1 = request.getRequestDispatcher("login.jsp");
+			//			reqdisp1.forward(request, response);
+			UserDao user = new UserDao();
+			String AccountNo = request.getParameter("accountno");
+			String password = request.getParameter("passworduser");
+
+			boolean adminAuth = user.adminLogin(AccountNo, password);
+			boolean auth = user.login(AccountNo,password);
+
+			if(adminAuth) {
+				//				response.sendRedirect("User-Details.jsp");
+				RequestDispatcher reqdisp = request.getRequestDispatcher("Admin-Page.jsp");
+				reqdisp.include(request, response);
+			}
+			else if(auth) {
+				RequestDispatcher reqdisp = request.getRequestDispatcher("User-Details.jsp");
+				reqdisp.include(request, response);
+			}
+			else {
+				RequestDispatcher reqdisp = request.getRequestDispatcher("login.jsp");
+				reqdisp.include(request, response);
+				out.println("<h1 style='color: violet; font-size: 25px; font-weight: bold;'>Unsuccessfully Login</h1>");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	public void adminDetails(String AccountNo,String password) throws SQLException {
+		UserDao user = new UserDao();
+		boolean adminAuth = user.adminLogin(AccountNo, password);
+
+		if(adminAuth) {
+			//			response.sendRedirect("User-Details.jsp");
+			RequestDispatcher reqdisp = request.getRequestDispatcher("User-Details.jsp");
+			reqdisp.include(request, response);
+
+		}
+		else {
+			RequestDispatcher reqdisp = request.getRequestDispatcher("login.jsp");
+			reqdisp.include(request, response);
+			out.println("<h1 style='color: violet; font-size: 25px; font-weight: bold;'>Unsuccessfully Login</h1>");
+		}
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.collection.framework;
+import java.util.*;
+
+
+public class VectorDemo2 {
+	public static void main(String[] args) {
+		Vector<String> v = new Vector();
+		v.add("Java");
+		v.add("Python");
+		v.add("PHP");
+		v.add("PERL");
+		v.add("C++");
+		
+		System.out.println(v);
+	}
+}

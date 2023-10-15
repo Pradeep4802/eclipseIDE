@@ -1,0 +1,5 @@
+package userManagementApplicationcom.xadmin.usermanagement.dao;
+
+public class USerDAO {
+
+}

@@ -1,0 +1,11 @@
+package practice.multithreaded;
+
+public class Customer {
+	ATM atm;
+	String name;
+	int amount;
+	void useATM() {
+		checkBalance(name);
+		
+	}
+}

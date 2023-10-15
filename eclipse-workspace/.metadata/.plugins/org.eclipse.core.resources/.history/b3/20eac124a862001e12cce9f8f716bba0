@@ -1,0 +1,29 @@
+package com.multithread.advance;
+
+class MyThread1 implements Runnable {
+	public void run() {
+		for(int i = 0;i < 5; i++) {
+			System.out.println("First Child Thread: "+i);;
+		}
+		System.out.println("\t First Child Existed");
+	}
+}
+class MyThread2 implements Runnable {
+	public void run() {
+		for(int i = 0;i < 5; i++) {
+			System.out.println("Second Child Thread: "+i);;
+		}
+		System.out.println("\t Second Child Existed");
+	}
+}
+
+public class MyClass {
+	public static void main(String[] args) {
+		MyThread1 th1 = new MyThread1();
+		Thread t1 = new Thread(th1);
+		t1.start();   // Execution of first thread has started
+		MyThread2 th2 = new MyThread2();
+		Thread t2 = new Thread(th2);
+		t2.start();   // Execution of second thread has started
+	}
+}

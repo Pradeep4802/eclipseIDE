@@ -1,0 +1,15 @@
+package practice.multithreaded;
+
+public class ATM {
+	public static void checkBalance(String name) {
+		
+	}
+	
+	public static void withDraw(String name, long amount) {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
